@@ -1,0 +1,24 @@
+Git is a distributed version control System.
+Version control system allows software developers to work together along with their histories of work being maintained.
+It does not allow overwriting each other's changes and also maintains history of every version.
+DCVS clients not only checks the latest changes but al;so maintains history of the repository. If server goes down then repo from any client can be copied back to the serverto restore it.
+You can commit chamges, create new branch view logs and perform other operations even while remaining offline. 
+The only time you require connection is while publishing your changes.
+
+
+stash:
+A place to hide modifications while you work on something else.
+(ekle ke kaik ad dkaryu modify karyu ne commit karta pehela tamare kaik biju modify karvu pade em hoi to pehela
+aa add files ke modified files ne stash kari lo ne pachi biji branch ma changes hoi ke kai bi biju)
+
+      git stash push: Saves your local modifications in a new stash
+	  git stash pop: Apllies the changes from the latest stash and then remove the stash
+	  git stash apply: Apllies the changes to the workspace, by default it is the latest stash
+	  git stash list: List the stashes that you have
+	  git stash show [<stash>] :Show the changes recorded in the stash as a diff between the stashed state and original parent. When no <stash> is given
+	                                       shows the latest one.
+      git stash drop [<stash>] : Remove a single stash from the stash list. If no <stash> is given removes the latest stash.
+	  git stash clear: Removes all stashed states. And might be is impossible to recover all changes.
+	  git stash branch <branchname> [<stash>]: Creates and checks new branch named <branchname> starting from the commit at which <stash. was originally created,
+	  applies changesrecorded to new working tree. With no any <stash> mentioned it will create a new stash and stashes all changes. This is heplful when git stash push has enough changes
+	  done that agit staash apply gives merge conflicts. Since stash is applied on top of HEAD commit  at that time git stash wikll restore originally stashed state with no conflicts.

@@ -1,0 +1,69 @@
+What is HTML?
+
+HTML is Hyper Teaxt Marup Language. It is a standard markup language for creating web page which is displayed on the browser.
+HTML consists of series of HTML elements which tells broser how to display the content.
+Latest : HTML5
+
+INCLUDES:
+
+Audio and video both allows to put audio and video along with managing its border transition opacity as per needed.
+
+Vector graphics <svg> to draw graphics with various shapes and colors via js.
+
+Header and Footer to inform broser which is header and footer and hence what to display first
+The header can contain-
+
+One or more heading elements (<h1> – <h6>)
+Logo or icon
+Authorship information
+Footer can contain-
+
+Authorship information
+Copyright information
+Contact information
+Back to top links
+
+
+Nav tag: Set of navigation links which links to different pages of websites.
+
+Placeholder:
+It is a small hint to the user to inform what type of input is expected. It will be seen to the user before user type anything
+
+Email attribute:
+Here users can enter their emails and in a validate format.
+
+Structure of HTML:
+<!DOCTYPE htmL> <====  Tells the document type
+<html> The Root element all other tags are wrapped inside it.
+<head>  Holds metadata like title, links etc  and is not displayed on page.
+</head>
+<body> hold contents of HTML
+</body>
+<html>
+
+
+
+HTML Elements:
+
+They are the building blocks of HTML
+An HTML element is defined by a start tag, some content and an end tag.
+However not every elements have closing tagsfor ex. <img> <hr> <br>. Known as singleton elements , void or empty elements.
+
+There are 2 types of elements 
+Inline and block
+Inline:
+They are instide the block level elements. there width is based on how much the individual element needs.
+You can't add addition styiling to it. If you want add inline-block.
+Ex. img, a, span, strong, b, em, i, code, input and button.
+
+Block:
+They takes entire width to be occupied. Always have a line before and after the element.
+Ex. div, p, h1, h6, form, ol,ul,li,figure,article,section,footer etc.
+
+
+
+What is an HTML Attribute ?
+It modifies the HTML elements. Control the behaviour of HTML elements. Every tag has two sections first one is name
+of attribute and another one is it's value.  Attributes are insided the start tag of that element whichneeds to be changed.
+Attributes can be height, width, class etc.
+
