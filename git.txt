@@ -21,4 +21,52 @@ aa add files ke modified files ne stash kari lo ne pachi biji branch ma changes 
 	  git stash clear: Removes all stashed states. And might be is impossible to recover all changes.
 	  git stash branch <branchname> [<stash>]: Creates and checks new branch named <branchname> starting from the commit at which <stash. was originally created,
 	  applies changesrecorded to new working tree. With no any <stash> mentioned it will create a new stash and stashes all changes. This is heplful when git stash push has enough changes
-	  done that agit staash apply gives merge conflicts. Since stash is applied on top of HEAD commit  at that time git stash wikll restore originally stashed state with no conflicts.
+	  done that a git stash apply gives merge conflicts. Since stash is applied on top of HEAD commit  at that time git stash wikll restore originally stashed state with no conflicts.
+	  
+	  
+	  
+	 
+WORKSPACE:
+
+git status: displays the changes between the commit of index file and current HEAD commit
+            (for ex. after commiting if I again update working directory and do git status it will
+            give the updates before commits. Index file is the file where all the changes are saved temporary after git add .
+            
+            
+            
+git diff: shows difference after updating working directory before git add .
+	 
+	 git diff <branch1>..<branch2> : shows difference between both branches
+	 
+git add . : adds changes to index file
+git add <filename> : adds the particular file in index.
+
+git rm <filename>: removes the file from working as well as index
+
+if you want to gain back deleted file write git reset  and then git restore <filename>
+
+git mv <filename> <filename2> mv from one file to other (or folder)
+ 
+ ex. git mv src/index.js public/try.js
+ 
+ git commit commits all staged files
+ 
+ git reset --hard  commit karya pela na badha j changes delete kari nakhse
+ 
+ git switch branch switches branches
+ 
+ git checkout -b : creates and switch different branch
+ git merge <commit or branch> merges changes or branch into current branch
+ git checrry-pick <commit> changes commitsfrom different branch to another branch
+ 
+ git revert: reverts all changes before commits this will not affect git stash
+ git clone download git
+ git pull <remote> fetches changes done in remote repo after clone
+ git clean removes untracked files first try git clean --dry-run to check which files would be deleted
+ 
+ 
+ git merge merges the commits of one branch to the current branch 
+ here it create a new commitmessage and this will be attatched 
+ 
+ 
+git rebase applies all comits as it is ahead of bease branch and changes commit history
