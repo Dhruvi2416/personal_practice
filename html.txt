@@ -116,3 +116,45 @@ color, background-color, height,width,font-size
 text-align defines the horizontal text alignment of the HTML element
 font-family defines types of fonts
 font-weight defines boldness of text
+
+HTML <blockquote>
+Defines a section that has been copied from other page.
+Browsers indent <blockquote> elements.
+<q> </q> like " "
+
+<abbr> abbreviations 
+Can give useful info to search engines, browsers, translation systems
+
+title attribute while on hovering over the word will give a info about it.
+
+<address> defines contact info . Usually renders in italic and browser will add a line break before and after address
+
+<bdo dir="rtl"> will display lines from right to left.
+
+<!-- HTML Comment -->
+
+HTML Colors
+Simply color name : background-color: tomato;
+rgb / rgba   rgb(255, 99, 71)  / rgba(255, 99, 71,0.5)  //value bet 0 255 total 256 x 256 x 256 possibilities
+hex  #ff6347
+hsl / hsla  hsl(9, 100%, 64%)  /  hsla(9, 100%, 64%,0.5)
+
+
+RGBA
+
+Alpha paramaerter is a number bet 0 to 1
+0 means fully transparent and 1 means not transparent at all
+
+
+HEX
+
+#rrggbb
+
+
+HSL
+
+hue saturation lightness
+
+HUE: degree on color wheel 0 to 360 //0 red //120 green//240 blue
+SATURATION: 0% value means shade of gray, 100% is full color
+Lightness:  0% black and 100% white
