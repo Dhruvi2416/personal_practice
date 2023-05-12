@@ -1,0 +1,105 @@
+CSS
+
+It is language we use to style Html document.
+It describes how elements should be displayed.
+Css stands for Cascading Style Sheets
+
+
+CSS rule consists of a selector and a declaration block.
+
+h1{
+color: blue;
+}
+
+h1: Selector 
+color: Property
+blue: value
+
+CSS Selectors:
+Selects the HTML element you want to style
+by name,id or class
+
+p{
+}
+
+id Selector
+id is unique for each element
+#id{
+}
+
+class Selector
+.className{}
+
+
+.className p{}
+this will give particular style to all p within class only and not all p's.
+
+Universal Selector:
+*{}
+This will affect whole page
+
+CSS Grouping Selector:
+
+h1, h2, p{}
+This will give same css to all three
+
+Selector	 					Example						Example description
+#id								#firstname					Selects the element with id="firstname"
+.class							.intro							Selects all elements with class="intro"
+element.class			p.intro							Selects only <p> elements with class="intro"
+*										*								Selects all elements
+element							p								Selects all <p> elements
+element,element,..	div, p							Selects all <div> elements and all <p> elements
+
+CSS Comments:
+/* */
+
+CSS Backgrounds:
+background-color // add background color
+background-image // add background image
+background-repeat 
+background-attatchment
+background-position
+background 
+
+BG: color:
+opacity // makes transparent from 0.0- 1.0  
+but with opacity it will make all child elements transparent which will also turn text transparent
+rgba(0,128,0,0.3) green with 
+
+BG: image:
+background-image: url("paper.png")
+if image is small it will repeat horizontally and vertically.
+
+With the help of repeat you can repeat image on x axis or y axiz only or can prevent from repeating
+
+background-repeat: repeat-x // repeat horizontally
+background-repeat: repeat-y // repeat vertically
+
+background-repeat: no-repeat //will not repeat image
+
+background-position:
+background-position: right top 
+
+background-attatchment:
+sets whether image should be scrollable or fixed
+
+background shorthand:
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+When using the shorthand property the order of the property values is:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
